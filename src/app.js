@@ -12,27 +12,38 @@ window.onload = () => {
 };
 
 function generateExcuse() {
-  let pronoun = ["A", "The"];
-  let subject = ["clown", "dog", "neighbour", "cow", "policeman", "cat"];
-  let action = ["yelled at my", "took my", "stole my"];
-  let possetion = ["car", "homework", "shoe"];
-  let where = ["on the street", "in my yard", "two blocks from here"];
+  let subject = [
+    "The dog",
+    "My grandma",
+    "His turtle",
+    "My bird",
+    "A policeman",
+    "The president",
+    "A cow"
+  ];
+  let action = ["ate", "peed", "crushed", "broke"];
+  let possetion = ["my homework", "the keys", "the car"];
+  let when = [
+    "before the class",
+    "right on time",
+    "during my lunch",
+    "while I was sleeping",
+    "like two minutes ago",
+    "just now"
+  ];
 
-  let proIndx = Math.floor(Math.random() * pronoun.length);
   let subIndx = Math.floor(Math.random() * subject.length);
   let actIndx = Math.floor(Math.random() * action.length);
   let possIndx = Math.floor(Math.random() * possetion.length);
-  let whIndex = Math.floor(Math.random() * where.length);
+  let whIndex = Math.floor(Math.random() * when.length);
 
   return (
-    pronoun[proIndx] +
-    " " +
     subject[subIndx] +
     " " +
     action[actIndx] +
     " " +
     possetion[possIndx] +
     " " +
-    where[whIndex]
+    when[whIndex]
   );
 }
