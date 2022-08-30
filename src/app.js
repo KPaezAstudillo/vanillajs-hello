@@ -13,7 +13,7 @@ window.onload = () => {
 
 function generateExcuse() {
   let pronoun = ["A", "The"];
-  let subject = ["clown", "dog", "UFO", "cow", "policeman", "president"];
+  let subject = ["clown", "dog", "neighbour", "cow", "policeman", "cat"];
   let action = ["yelled at my", "took my", "stole my"];
   let possetion = ["car", "homework", "shoe"];
   let where = ["on the street", "in my yard", "two blocks from here"];
